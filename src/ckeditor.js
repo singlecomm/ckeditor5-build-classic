@@ -15,6 +15,7 @@ import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class SingleCommEditor extends ClassicEditorBase {}
 
@@ -28,7 +29,8 @@ SingleCommEditor.builtinPlugins = [
 	Heading,
 	List,
 	Paragraph,
-	Alignment
+	Alignment,
+	Font
 ];
 
 // Editor configuration.
@@ -48,6 +50,9 @@ SingleCommEditor.defaultConfig = {
 			'alignment:center',
 			'alignment:right',
 			'alignment:justify',
+			'|',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'bulletedList',
 			'numberedList',
